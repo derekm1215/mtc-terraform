@@ -1,0 +1,14 @@
+{
+  "registry.terraform.io/hashicorp/null": {
+    "hash": "h1:ysHGBhBNkIiJLEpthB/IVCLpA1Qoncp3KbCTFGFZTO0=",
+    "version": "3.0.0"
+  },
+  "registry.terraform.io/hashicorp/random": {
+    "hash": "h1:grDzxfnOdFXi90FRIIwP/ZrCzirJ/SfsGBe6cE0Shg4=",
+    "version": "3.0.0"
+  },
+  "registry.terraform.io/terraform-providers/docker": {
+    "hash": "h1:06EZRBUCgKAVbtwOtE2I0giBUcpgENy+NUUMM88+siY=",
+    "version": "2.7.2"
+  }
+}
