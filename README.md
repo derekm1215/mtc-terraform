@@ -1,5 +1,7 @@
 # More Than Certified - Terraform
 
+This repo will be moving soon. Pleasee be patient as the course is still in preview and I need to get things polished and cleaned up. More details to come! 
+
 ### How to use this repo
 
 git clone https://github.com/derekm1215/mtc-terraform.git
