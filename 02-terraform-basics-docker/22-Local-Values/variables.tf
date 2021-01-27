@@ -1,5 +1,5 @@
 variable "ext_port" {
-  type = list
+  type = list(any)
 
 
   # validation {
@@ -7,7 +7,7 @@ variable "ext_port" {
   #   error_message = "The external port must be in the valid port range 0 - 65535."
   # }
 }
-  
+
 variable "int_port" {
   type    = number
   default = 1880

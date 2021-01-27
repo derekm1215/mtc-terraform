@@ -12,7 +12,7 @@ resource "random_string" "random" {
 
 
 module "container" {
-  source = "./container"
+  source            = "./container"
   count             = local.container_count
   name_in           = join("-", ["nodered", terraform.workspace, random_string.random[count.index].result])
   image_in          = module.image.image_out

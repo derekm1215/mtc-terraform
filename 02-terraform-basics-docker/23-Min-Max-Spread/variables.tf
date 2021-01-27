@@ -1,5 +1,5 @@
 variable "ext_port" {
-  type = list
+  type = list(any)
 
 
   validation {

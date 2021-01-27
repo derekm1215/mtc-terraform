@@ -21,10 +21,10 @@ resource "docker_container" "app_container" {
     }
   }
   provisioner "local-exec" {
-    command = "echo ${self.name}: ${self.ip_address}:${join("", [for x in self.ports[*]["external"]: x])} >> test.txt"
+    command = "echo ${self.name}: ${self.ip_address}:${join("", [for x in self.ports[*]["external"] : x])} >> test.txt"
   }
   provisioner "local-exec" {
-    when = destroy
+    when    = destroy
     command = "rm -f test.txt"
   }
 }
@@ -36,13 +36,13 @@ resource "docker_volume" "container_volume" {
     prevent_destroy = false
   }
   provisioner "local-exec" {
-    when = destroy
-    command = "mkdir ${path.cwd}/../backup/"
+    when       = destroy
+    command    = "mkdir ${path.cwd}/../backup/"
     on_failure = continue
   }
   provisioner "local-exec" {
-    when = destroy
-    command = "sudo tar -czvf ${path.cwd}/../backup/${self.name}.tar.gz ${self.mountpoint}/"
+    when       = destroy
+    command    = "sudo tar -czvf ${path.cwd}/../backup/${self.name}.tar.gz ${self.mountpoint}/"
     on_failure = fail
   }
 }
