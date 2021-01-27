@@ -1,4 +1,5 @@
-04-AWS-K8s/
+04-AWS-K8s/1[7-9]*
+04-AWS-K8s/2*
 # Local .terraform directories
 **/.terraform/*
 
