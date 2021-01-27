@@ -1,4 +1,5 @@
 # This .gitignore is for my course specifically. Keep in mind, you would also want to ignore .tfvars and potentially other files in production!
+04-AWS-K8s/00*
 04-AWS-K8s/1[7-9]*
 04-AWS-K8s/2*
 # Local .terraform directories
