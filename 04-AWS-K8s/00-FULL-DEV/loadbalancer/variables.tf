@@ -1,9 +1,0 @@
-variable "elb_healthy_threshold" {}
-variable "elb_unhealthy_threshold" {}
-variable "elb_timeout" {}
-variable "elb_interval" {}
-variable "public_sg" {}
-variable "project_name" {}
-variable "pc_vpc" {}
-variable "public_subnets" {}
-variable "pc_nodes" {}

@@ -1,1 +1,0 @@
-variable "access_ip" {}
