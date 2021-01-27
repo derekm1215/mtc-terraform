@@ -1,5 +1,5 @@
 resource "random_string" "random" {
-  count = var.count_in
+  count   = var.count_in
   length  = 4
   special = false
   upper   = false
@@ -15,13 +15,13 @@ resource "docker_container" "app_container" {
   }
   volumes {
     container_path = var.container_path_in
-    volume_name = docker_volume.container_volume[count.index].name
+    volume_name    = docker_volume.container_volume[count.index].name
   }
 }
 
 resource "docker_volume" "container_volume" {
   count = var.count_in
-  name = "${var.name_in}-${random_string.random[count.index].result}-volume"
+  name  = "${var.name_in}-${random_string.random[count.index].result}-volume"
   lifecycle {
     prevent_destroy = false
   }

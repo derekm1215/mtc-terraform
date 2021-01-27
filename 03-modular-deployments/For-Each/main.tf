@@ -22,12 +22,12 @@ resource "random_string" "random" {
 
 
 module "container" {
-  source   = "./container"
-  for_each = local.project
-  name_in     = join("-", [each.key, terraform.workspace, random_string.random[each.key].result])
-  image_in    = module.image.image_out
-  int_port_in = each.value.int_port
-  ext_port_in = each.value.ext_port
+  source            = "./container"
+  for_each          = local.project
+  name_in           = join("-", [each.key, terraform.workspace, random_string.random[each.key].result])
+  image_in          = module.image.image_out
+  int_port_in       = each.value.int_port
+  ext_port_in       = each.value.ext_port
   container_path_in = "/data"
 }
 

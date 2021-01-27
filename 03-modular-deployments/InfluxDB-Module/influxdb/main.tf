@@ -7,7 +7,7 @@ resource "docker_image" "infuxdb_image" {
   }
   volumes {
     container_path = "/var/lib/influxdb"
-    volume_name = docker_volume.container_volume.name
+    volume_name    = docker_volume.container_volume.name
   }
 }
 

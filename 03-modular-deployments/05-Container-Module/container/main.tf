@@ -7,6 +7,6 @@ resource "docker_container" "nodered_container" {
   }
   volumes {
     container_path = var.container_path_in
-    host_path = var.host_path_in
+    host_path      = var.host_path_in
   }
 }
