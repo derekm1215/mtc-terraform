@@ -9,5 +9,5 @@ output "db_subnet_group_name" {
 }
 
 output "db_security_group" {
-  value = aws_security_group.mtc_sg["rds"].id
+  value = [aws_security_group.mtc_sg["rds"].id]
 }

@@ -9,6 +9,7 @@ resource "docker_container" "app_container" {
   count = var.count_in
   name  = join("-", [var.name_in, terraform.workspace, random_string.random[count.index].result])
   image = var.image_in
+  user = "472:472"
   ports {
     internal = var.int_port_in
     external = var.ext_port_in[count.index]

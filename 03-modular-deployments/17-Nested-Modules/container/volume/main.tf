@@ -1,7 +1,6 @@
 resource "docker_volume" "container_volume" {
   count = var.volume_count
-  #   name  = "${var.name_in}-volume-${count.index}"
-  name = "${var.volume_name}-${count.index}"
+  name  = "${var.volume_name}-${count.index}"
   lifecycle {
     prevent_destroy = false
   }

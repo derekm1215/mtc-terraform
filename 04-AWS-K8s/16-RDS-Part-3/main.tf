@@ -23,5 +23,5 @@ module "database" {
   db_identifier          = "mtc-db"
   skip_db_snapshot       = true
   db_subnet_group_name   = module.networking.db_subnet_group_name[0]
-  vpc_security_group_ids = [module.networking.db_security_group]
+  vpc_security_group_ids = module.networking.db_security_group
 }

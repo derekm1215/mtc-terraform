@@ -18,11 +18,11 @@ resource "docker_container" "app_container" {
     volume_name    = docker_volume.container_volume[count.index].name
   }
   provisioner "local-exec" {
-    command = "echo ${self.name}: ${self.ip_address}:${join("", [for x in self.ports[*]["external"] : x])} >> test.txt"
+    command = "echo ${self.name}: ${self.ip_address}:${join("", [for x in self.ports[*]["external"] : x])} >> containers.txt"
   }
   provisioner "local-exec" {
     when    = destroy
-    command = "rm -f test.txt"
+    command = "rm -f containers.txt"
   }
 }
 

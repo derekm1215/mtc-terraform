@@ -35,3 +35,4 @@ module "volume" {
   volume_count = length(var.volumes_in)
   volume_name  = "${var.name_in}-${terraform.workspace}-${random_string.random[count.index].result}-volume"
 }
+
