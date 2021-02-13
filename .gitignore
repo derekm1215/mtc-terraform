@@ -2,7 +2,7 @@
 # .tfvars and ALL security keys in production. Those are here only for the benefit of the course and are not in use. 
 04-AWS-K8s/00*
 04-AWS/40*
-05-k8s
+05-K8s
 tfcloud-dev/
 # Local .terraform directories
 **/.terraform/*
