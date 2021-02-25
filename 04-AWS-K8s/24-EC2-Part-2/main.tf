@@ -44,10 +44,10 @@ module "loadbalancing" {
 }
 
 module "compute" {
-  source = "./compute"
-  public_sg = module.networking.public_sg
+  source         = "./compute"
+  public_sg      = module.networking.public_sg
   public_subnets = module.networking.public_subnets
   instance_count = 1
-  instance_type = "t3.micro"
-  vol_size = "20"
+  instance_type  = "t3.micro"
+  vol_size       = "20"
 }

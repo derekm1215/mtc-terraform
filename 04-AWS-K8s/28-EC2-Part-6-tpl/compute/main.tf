@@ -1,5 +1,5 @@
 locals {
-    vars = {
+  vars = {
     nodename    = "mtc-${random_id.mtc_node_id[count.index].dec}"
     db_endpoint = var.db_endpoint
     dbuser      = var.dbuser

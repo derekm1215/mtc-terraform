@@ -16,7 +16,7 @@ resource "random_id" "mtc_node_id" {
 
 
 resource "aws_instance" "mtc_node" {
-  count         = var.instance_count 
+  count         = var.instance_count
   instance_type = var.instance_type
   ami           = data.aws_ami.server_ami.id
 

@@ -8,14 +8,14 @@ resource "aws_lb" "mtc_lb" {
 }
 
 resource "aws_lb_target_group" "mtc_tg" {
-  name = "mtc-lb-tg-${substr(uuid(), 0, 3)}"
-  port = var.tg_port
+  name     = "mtc-lb-tg-${substr(uuid(), 0, 3)}"
+  port     = var.tg_port
   protocol = var.tg_protocol
-  vpc_id = var.vpc_id
+  vpc_id   = var.vpc_id
   health_check {
-    healthy_threshold = var.elb_healthy_threshold
+    healthy_threshold   = var.elb_healthy_threshold
     unhealthy_threshold = var.elb_unhealthy_threshold
-    timeout = var.elb_timeout
-    interval = var.elb_interval
+    timeout             = var.elb_timeout
+    interval            = var.elb_interval
   }
 }

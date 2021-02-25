@@ -56,5 +56,5 @@ module "compute" {
   dbuser          = var.dbuser
   dbpassword      = var.dbpassword
   db_endpoint     = module.database.db_endpoint
-  user_data_path = "${path.root}/userdata.tpl"
+  user_data_path  = "${path.root}/userdata.tpl"
 }
