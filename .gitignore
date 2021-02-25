@@ -1,9 +1,6 @@
 # This .gitignore is for my course specifically. Keep in mind, you would also want to ignore 
 # .tfvars and ALL security keys in production. Those are here only for the benefit of the course and are not in use. 
-04-AWS-K8s/00*
-04-AWS-K8s/40*
-05-K8s/
-tfcloud-dev/
+06-TFC-CICD/
 # Local .terraform directories
 **/.terraform/*
 
