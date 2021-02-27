@@ -1,5 +1,0 @@
-aws_access_key_id     = "AKIAQQHN4VN32LAFN2FJ"
-aws_secret_access_key = "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"
-github_token          = "1df430790d8314794428edf558c89c6fb02bbe57"
-tfe_token             = "MDmFNJihmF2VkQ.atlasv1.givA5S9oonzmU5dYPPWKmrbIbzzKf506bQa6RM0MyrNkp7deRrvk4zz9ywGVoTGlsSQ"
-github_owner          = "derekops"
