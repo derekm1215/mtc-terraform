@@ -16,6 +16,7 @@ crash.log
 # control as they are data points which are potentially sensitive and subject 
 # to change depending on the environment.
 #
+#Some lessons require a tfvars files, so I have ommitted this entry. You should always ignore .tfvars in production. 
 #*.tfvars
 
 # Ignore override files as they are usually used to override resources locally and so

@@ -1,5 +1,5 @@
 locals {
-  config  = data.terraform_remote_state.kubeconfig.outputs.kubeconfig
+  config = data.terraform_remote_state.kubeconfig.outputs.kubeconfig
 }
 
 terraform {
